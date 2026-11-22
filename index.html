@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fceaf1">
+  <meta name="description" content="A little happiness world made with love for Bathu Mole.">
+  <title>A Little World for Bathu Mole ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="A Little World for Bathu Mole"><span class="brand-heart">♡</span> a little world of us</a>
+    <button class="music-toggle" id="musicToggle" aria-label="Open music player">♫ <span>Our song</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">MADE WITH LOVE, JUST FOR YOU</p>
+        <h1>Hey my favourite person,</h1>
+        <p class="hero-line">today is not about worrying. Today is about smiling, playing and feeling loved. ❤️</p>
+        <p class="soft-copy">Bathu Mole, this little corner of the world is yours. Take a breath, go slowly, and choose whatever makes your heart feel lighter.</p>
+        <button class="primary-btn" id="enterBtn">Enter my happy place <span>✦</span></button>
+      </div>
+      <div class="hero-art" aria-label="Dreamy illustration">
+        <div class="moon"></div><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+        <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">♡</span>
+        <div class="flower flower-a">✿</div><div class="flower flower-b">✿</div>
+        <div class="hero-note">a soft place<br>to land</div>
+      </div>
+      <div class="scroll-hint">A little happiness is waiting below ↓</div>
+    </section>
+
+    <section class="section mood-section" id="mood">
+      <div class="section-heading">
+        <p class="eyebrow">FIRST, A LITTLE CHECK-IN</p>
+        <h2>How is your heart today?</h2>
+        <p>You don't have to pretend here. Pick the feeling closest to yours.</p>
+      </div>
+      <div class="mood-grid">
+        <button class="mood-card" data-mood="sad"><span>🥺</span><b>A little sad</b><small>I need comfort</small></button>
+        <button class="mood-card" data-mood="overthinking"><span>😵‍💫</span><b>Overthinking</b><small>My mind is busy</small></button>
+        <button class="mood-card" data-mood="love"><span>🥰</span><b>Need some love</b><small>Make me smile</small></button>
+        <button class="mood-card" data-mood="happy"><span>😊</span><b>Feeling good</b><small>Let's have fun</small></button>
+      </div>
+      <div class="mood-response" id="moodResponse" aria-live="polite">Whatever you're feeling is welcome here. ❤️</div>
+    </section>
+
+    <section class="section garden-section" id="garden">
+      <div class="section-heading">
+        <p class="eyebrow">WORLD 01 · HAPPINESS GARDEN</p>
+        <h2>A few little things, just for you</h2>
+        <p>Choose one. There is no score, no rush, and no wrong answer.</p>
+      </div>
+      <div class="activity-grid">
+        <article class="activity-card">
+          <div class="activity-icon pink">🎁</div><h3>Open a little love box</h3>
+          <p>A tiny reminder from me, whenever you need one.</p>
+          <button class="text-btn" id="loveBoxBtn">Open my gift <span>↗</span></button>
+          <div class="reveal" id="loveBoxMessage" aria-live="polite"></div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-icon lilac">🫙</div><h3>Your worry jar</h3>
+          <p>Write down a thought. You can keep it private on this device.</p>
+          <textarea id="worryInput" placeholder="What's taking up space in your mind?" rows="3"></textarea>
+          <button class="text-btn" id="releaseWorryBtn">Let it rest for now</button>
+          <div class="reveal" id="worryMessage" aria-live="polite"></div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-icon peach">🌷</div><h3>One-minute breathing garden</h3>
+          <p>Follow the flower. Breathe in gently, then breathe out slowly.</p>
+          <div class="breath-wrap"><div class="breath-flower" id="breathFlower">✿</div><span id="breathLabel">Ready when you are</span></div>
+          <button class="text-btn" id="breathBtn">Start one minute</button>
+        </article>
+        <article class="activity-card">
+          <div class="activity-icon yellow">✨</div><h3>A tiny happiness mission</h3>
+          <p>One small, silly mission to bring a smile.</p>
+          <button class="text-btn" id="missionBtn">Give me a mission ↗</button>
+          <div class="reveal" id="missionMessage" aria-live="polite"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section universe-section" id="universe">
+      <div class="universe-panel">
+        <div class="universe-stars">✦　✧　·　♡　✧</div>
+        <p class="eyebrow">WORLD 02 · OUR UNIVERSE</p>
+        <h2>Even on the cloudy days,<br>you are loved.</h2>
+        <p class="universe-message">Nammal ellam perfect aavanam ennilla, Bathu Mole. Some days will be easy, some days may be difficult. But let's keep listening, understanding and choosing each other with care.</p>
+        <div class="promise-list">
+          <div class="promise"><span>01</span><p>I'll never stop choosing you, even on difficult days.</p></div>
+          <div class="promise"><span>02</span><p>I'll listen to your feelings instead of ignoring them.</p></div>
+          <div class="promise"><span>03</span><p>I'll work hard to build a secure future for us.</p></div>
+          <div class="promise"><span>04</span><p>I'll never let you feel alone in this relationship.</p></div>
+          <div class="promise"><span>05</span><p>I'll communicate honestly and never let misunderstandings grow.</p></div>
+          <div class="promise"><span>06</span><p>I'll turn our dreams into real plans, step by step.</p></div>
+        </div>
+        <p class="promise-footnote">Not just words for today. Things I want to keep showing through my actions. ❤️</p>
+      </div>
+      <div class="tomorrow-card">
+        <div class="orbit"><span>♡</span><i></i><b></b></div>
+        <p class="eyebrow">OUR TOMORROW</p>
+        <h3>One step at a time.</h3>
+        <p>I don't know the exact date when all our dreams will come true. But I know I want to keep walking towards them with you.</p>
+        <span class="tomorrow-tag">No deadline. Just a direction. ✦</span>
+      </div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow">WORLD 03 · OUR MEMORY DIARY</p>
+        <h2>Little pieces of us</h2>
+        <p>Add your own photos and memories whenever you're ready. These stay in this browser unless you choose to share the website files.</p>
+      </div>
+      <div class="memory-tools">
+        <label class="upload-btn">＋ Add our photos<input id="photoUpload" type="file" accept="image/*" multiple hidden></label>
+        <label class="upload-btn secondary-upload">＋ Add our first conversation / memories<input id="memoryUpload" type="file" accept=".txt,.md" hidden></label>
+      </div>
+      <div class="photo-grid" id="photoGrid">
+        <div class="photo-placeholder"><span>📷</span><b>Our favourite photo</b><small>Your picture can go here</small></div>
+        <div class="photo-placeholder"><span>💬</span><b>Our first conversation</b><small>Add a text file or write it below</small></div>
+        <div class="photo-placeholder"><span>🌻</span><b>That funny moment</b><small>A memory that still makes us laugh</small></div>
+      </div>
+      <div class="memory-note">
+        <h3>Write a memory for our diary</h3>
+        <textarea id="memoryText" rows="3" placeholder="A moment with you that I never want to forget..."></textarea>
+        <button class="text-btn" id="saveMemoryBtn">Save this memory</button>
+        <div id="savedMemory" class="reveal"></div>
+      </div>
+      <div class="first-chat">
+        <span class="chat-icon">💌</span><div><h3>Our first conversation</h3><p id="chatPreview">A little space for the first hello, the first laugh, and the beginning of our story.</p></div>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="letter-card">
+        <div class="letter-stamp">♡</div>
+        <p class="eyebrow">A LETTER FOR BATHU MOLE</p>
+        <h2>For the days when your heart feels heavy</h2>
+        <p>My Bathu Mole,</p>
+        <p>I know sometimes the thought of losing each other can feel frightening. I don't want to dismiss that feeling or tell you not to think about it. I want to understand what makes you afraid, listen without getting defensive, and talk through things honestly.</p>
+        <p>I may not have every answer today, and I don't want to make promises just to make this moment easier. I want to work towards a future where our words and actions make you feel secure. Your dreams matter. Your happiness matters. And your feelings deserve space in our relationship.</p>
+        <p>Nammal randuperum perfect alla. But we can learn, communicate, make real plans and take things one step at a time. You don't have to carry every worry alone, and you never have to hide how you feel from me.</p>
+        <p>Today, take a little break. Smile if you can, rest if you need to, and remember that you are precious to me.</p>
+        <p class="letter-sign">With all my love,<br><strong>Your favourite person ❤️</strong></p>
+        <button class="primary-btn" id="letterButton">Read it again, my love</button>
+      </div>
+    </section>
+
+    <section class="section final-section" id="final">
+      <div class="final-heart">♡</div>
+      <p class="eyebrow">ONE LAST LITTLE SURPRISE</p>
+      <h2>A hug, a letter, and my voice.</h2>
+      <p class="final-copy">Whenever you want a little reminder that you're loved, these are here for you.</p>
+      <div class="final-actions">
+        <button class="surprise-btn" id="hugBtn"><span>🧸</span><b>Send me a hug</b><small>A teddy bear hug, just for you</small></button>
+        <button class="surprise-btn" id="secretLetterBtn"><span>💌</span><b>Open your secret letter</b><small>A few words from my heart</small></button>
+        <label class="surprise-btn voice-upload"><span>🎙️</span><b>Add my voice message</b><small>Upload your recording when ready<input id="voiceUpload" type="file" accept="audio/*" hidden></small></label>
+      </div>
+      <div id="finalReveal" class="final-reveal" aria-live="polite"></div>
+      <audio id="voicePlayer" controls hidden></audio>
+      <p class="closing">Bathu Mole, one day at a time. Njan ninte koode undu — and I'll keep showing that through my actions. ❤️</p>
+    </section>
+  </main>
+
+
+    <section class="section feelings-section" id="feelings">
+      <div class="feelings-card">
+        <div class="feelings-heart">♡</div>
+        <p class="eyebrow">A LITTLE SPACE FOR YOUR HEART</p>
+        <h2>Tell Ashfaque what's in your heart</h2>
+        <p class="feelings-intro">Bathu Mole, you can tell me anything. Your feelings matter, and I'll always make time to listen. ❤️</p>
+        <form id="feelingsForm" class="feelings-form">
+          <label for="feelingName">Your name</label>
+          <input id="feelingName" name="name" type="text" value="Bathu Mole" required>
+          <label for="feelingEmail">Your email address</label>
+          <input id="feelingEmail" name="email" type="email" placeholder="Enter your email address" required>
+          <label for="feelingMood">What are you feeling today?</label>
+          <select id="feelingMood" name="mood" required>
+            <option value="">Choose a feeling</option>
+            <option>I'm feeling sad 🥺</option>
+            <option>I'm worried or overthinking 😔</option>
+            <option>I miss you ❤️</option>
+            <option>I need reassurance</option>
+            <option>I'm happy 🌸</option>
+            <option>I just want to tell you something</option>
+          </select>
+          <label for="feelingMessage">What's on your mind?</label>
+          <textarea id="feelingMessage" name="message" rows="6" placeholder="Write anything that's in your heart. No fear, no judgement..." required></textarea>
+          <button class="primary-btn feelings-send" type="submit">Send my feelings to Ashfaque ❤️</button>
+          <p class="feelings-note">When you press send, your email app will open with this message ready. Just press Send there. Nothing is sent automatically.</p>
+          <p class="feelings-status" id="feelingsStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  <footer><span>made with love</span> <b>♡</b> <span>for Bathu Mole</span></footer>
+
+  <aside class="music-player" id="musicPlayer" aria-label="Music player">
+    <div class="music-cover">♫</div>
+    <div class="music-info"><b>Hona Marro</b><small>Mubarak Al Nwaibet · Slow Nasheed</small></div>
+    <audio id="song" preload="metadata" src="assets/hona-marro-slow-nasheed.mp3"></audio>
+    <button id="playSong" class="play-btn" aria-label="Play song">▶</button>
+    <label class="volume-control" aria-label="Volume"><span>♪</span><input id="volume" type="range" min="0" max="1" step="0.01" value="0.7"></label>
+    <button id="closeMusic" class="close-music" aria-label="Close music player">×</button>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
